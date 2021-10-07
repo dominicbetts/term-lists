@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://dominic.com/term-list.schema.json",
+  "title": "Term List",
+  "description": "A term list for an Azure service",
+  "type": "object",
+  "properties": {
+    "title": {
+      "description": "A display title for the term list",
+      "type": "string"
+    },
+    "terms": {
+      "description": "The list of terms",
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/term"
+      }
+    },
+    "additionalProperties": false
+  },
+  "required": [
+    "title",
+    "terms"
+  ],
+  "$defs": {
+    "term": {
+      "type": "object",
+      "properties": {
+        "term": {
+          "type": "string",
+          "description": "The term. This value should be unique."
+        },
+        "customer-facing": {
+          "type": "boolean",
+          "description": "Should the term be included in the customer-facing glossary (true or false)."
+        },
+        "contributor-guide": {
+          "type": "boolean",
+          "description": "Should the term be included in the contributor guide (true or false)."
+        },
+        "definition": {
+          "type": "string",
+          "description": "The term definition. Use markdown formatting and links."
+        },
+        "usage": {
+          "type": "string",
+          "description": "Give examples of usage such as capitalization, first and subsequent usage, and acronyms."
+        },
+        "services": {
+          "type": "array",
+          "description": "The service or services the term is associated with.",
+          "items": {
+            "type": "string",
+            "pattern": "^iot-hub|iot-central|iot-fundamentals|iot-dps|iot-edge$"
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": ["term", "definition", "customer-facing", "contributor-guide"],
+      "additionalProperties": false
+    }
+  }
+}
