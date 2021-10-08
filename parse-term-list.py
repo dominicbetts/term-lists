@@ -14,10 +14,9 @@ class Outputter:
             data = yaml.safe_load(f)
             filteredTerms = filter(lambda term: term[outputFormat], data['terms'])
             self.terms = sorted(filteredTerms, key=lambda t: t['term'])
-            self.termNames = []
-            for t in self.terms:
-               self.termNames.append(t['term'])
-            # Sort the term names in descending size order so we match the longest terms first
+
+            # Get a list of term names in descending size order so we match the longest terms first
+            self.termNames = [t['term'] for t in self.terms]
             self.termNames.sort(key=lambda s: (len(s), s), reverse=True)
 
     def generateOutput(self):
@@ -44,12 +43,14 @@ class Outputter:
     def outputDefinitionWithCrossLinks(self, currentTerm):
         definition = currentTerm['definition']
         for t in self.termNames:
+
+            # Don't link a term to itself
             if t.lower() != currentTerm['term'].lower():
 
                 # Get the first instance that isn't in an existing link
-                # Requires regex module instead of re to work
-                regexp1 = "(?<!\[[\w\s\-]*)%s(?![\w\s\-]*\))" % t.lower()
-                m1 = re.search(regexp1, definition.lower())
+                # Note: Requires regex module instead of re to work
+                regexp = "(?<!\[[\w\s\-]*)%s(?![\w\s\-]*\))" % t.lower()
+                m1 = re.search(regexp, definition.lower())
 
                 if m1:
                     start = m1.span()[0]
@@ -59,7 +60,7 @@ class Outputter:
                     definition = "%s[%s](#%s)%s" % (definition[:start], definition[start:end], slugify(t), definition[end:] )
         print(definition)
 
-inputFile = sys.argv[1] # YAML term list file
+inputFile = sys.argv[1]    # YAML term list file
 outputFormat = sys.argv[2] # customer-facing|contributor-guide
 
 print('Processing file: %s' % inputFile)
