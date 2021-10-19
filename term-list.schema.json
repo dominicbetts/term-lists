@@ -43,20 +43,45 @@
           "description": "The term definition. Use markdown formatting and links."
         },
         "usage": {
+          "$ref": "#/$defs/usage"
+        },
+        "learn-more": {
           "type": "string",
-          "description": "Give examples of usage such as capitalization, first and subsequent usage, and acronyms."
+          "description": "A link to a resource in docs or on a third-party site where the user can learn more. Use the markdown link format: [Text to display](URL)"
         },
         "services": {
           "type": "array",
           "description": "The service or services the term is associated with.",
           "items": {
             "type": "string",
-            "pattern": "^iot-hub|iot-central|iot-fundamentals|iot-dps|iot-edge$"
+            "pattern": "^iot-hub|iot-central|iot-fundamentals|iot-dps|iot-edge|digital-twins|iot-develop$"
           },
           "uniqueItems": true
         }
       },
-      "required": ["term", "definition", "customer-facing", "contributor-guide"],
+      "required": ["term", "definition", "customer-facing", "contributor-guide", "services"],
+      "additionalProperties": false
+    },
+    "usage": {
+      "type": "object",
+      "properties": {
+        "casing-rules": {
+          "type": "string",
+          "description": "Should the term be upper or lower cased."
+        },
+        "first-mention": {
+          "type": "string",
+          "description": "Any guidance on first mention of the term in an article."
+        },
+        "accepted-abbreviation": {
+          "type": "string",
+          "description": "Accepted abbreviation or acronymn."
+        },
+        "example-usage": {
+          "type": "string",
+          "description": "An example sentence that shows how to use the term."
+        }
+      },
       "additionalProperties": false
     }
   }
