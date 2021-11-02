@@ -40,13 +40,11 @@ class Outputter:
                 self.firstLetter=currentLetter.lower()
 
             # Print the term and its definition
-            print('### %s' % (term['term'],) )
-            print('')
+            print('### %s\n' % (term['term'],) )
             print(definition)
-            print('')
             if 'learn-more' in term:
-                print('To learn more, see %s' % term['learn-more'])
-            print ('Applies to: %s' % serviceList[2:])
+                print('[Learn more](%s)\n' % term['learn-more'])
+            print ('Applies to: %s\n' % serviceList[2:])
 
         if self.outputFormat == 'contributor-guide':
             # Print the letter headings "## A", "## B" etc
@@ -56,11 +54,9 @@ class Outputter:
                 self.firstLetter=currentLetter.lower()
 
             # Print the term and its definition
-            print('### %s' % (term['term'],) )
-            print('Applies to: %s' % serviceList[2:])
-            print('')
+            print('### %s\n' % (term['term'],) )
+            print('Applies to: %s\n' % serviceList[2:])
             print(definition)
-            print('')
             if 'usage' in term:
                 self.outputUsage(term['usage'])
 
@@ -69,7 +65,7 @@ class Outputter:
             if 'usage' in term:
                 self.outputUsage(term['usage'])
             if 'learn-more' in term:
-                print('To learn more, see %s' % term['learn-more'])
+                print('[Learn more](%s)\n' % term['learn-more'])
             serviceList = ''
             for s in term['services']:
                 serviceList = '%s, %s' % (serviceList, services[s])
@@ -84,7 +80,7 @@ class Outputter:
             print('First mention: %s' % (term['first-mention']))
             print('')
         if 'accepted-abbreviation' in term:
-            print('Accepted abbreviation: %s' % (term['accepted-abbreviation']))
+            print('Abbreviation: %s' % (term['accepted-abbreviation']))
             print('')
         if 'example-usage' in term:
             print('Example usage: %s' % (term['example-usage']))

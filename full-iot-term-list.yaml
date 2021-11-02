@@ -7,8 +7,7 @@ terms:
       accepted-abbreviation: AMQP
       first-mention: Depending on the context spell out in full. Otherwise use the abbreviation AMQP.
       casing-rules: Always *Advanced Message Queueing Protocol*.
-    learn-more: |
-      [Choose a device communication protocol](../iot-hub/iot-hub-devguide-protocols.md)
+    learn-more: ../iot-hub/iot-hub-devguide-protocols.md
     customer-facing: true
     contributor-guide: true
     services: [iot-hub, iot-central, iot-develop]
@@ -38,8 +37,7 @@ terms:
     usage:
       casing-rules: Always lowercase.
     services: [iot-edge]
-    learn-more: |
-      [IoT Edge automatic deployment](../iot-edge/module-deployment-monitoring.md)
+    learn-more: ../iot-edge/module-deployment-monitoring.md
   - term: Automatic device configuration
     definition: |
       A feature of IoT Hub that enables your solution back end to assign desired properties to a set of device twins and report device status using system and custom metrics.
@@ -48,8 +46,7 @@ terms:
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub]
-    learn-more: |
-      [Automatic device configurations](../iot-hub/iot-hub-automatic-device-management.md)
+    learn-more: ../iot-hub/iot-hub-automatic-device-management.md
   - term: Automatic device management
     definition: |
       A feature of IoT Hub that automates many of the repetitive and complex tasks of managing large device fleets over the entirety of their lifecycles. The feature lets you target a set of devices based on their properties, define a desired configuration, and let IoT Hub update devices whenever they come into scope.
@@ -70,8 +67,7 @@ terms:
       casing-rules: Always capitalize when you're referring to the service.
       example-usage: The data in your *Azure Digital Twins* model can be routed to downstream Azure services for more analytics or storage.
     services: [digital-twins]
-    learn-more: |
-      [Azure Digital Twins](../digital-twins/overview.md)
+    learn-more: ../digital-twins/overview.md
   - term: Azure Digital Twins instance
     definition: |
       A single instance of the Azure Digital Twins service in a customer's subscription. While Azure Digital Twins refers to the Azure service as a whole, your Azure Digital Twins *instance* is your individual Azure Digital Twins resource.
@@ -90,8 +86,7 @@ terms:
       first-mention: On first mention, always use *Azure IoT device SDKs*. On subsequent mentions abbreviate to *device SDKs*.
       casing-rules: Always refer to as *Azure IoT device SDKs*.
       example-usage: The *Azure IoT device SDKs* are a set of device client libraries, developer guides, samples, and documentation. The *device SDKs* help you to programmatically connect devices to Azure IoT services.
-    learn-more: |
-      [Overview of Azure IoT device SDKs](../iot-develop/about-iot-sdks.md)
+    learn-more: ../iot-develop/about-iot-sdks.md
     services: [iot-hub, iot-central, iot-develop]
   - term: Azure IoT Explorer
     definition: |
@@ -100,19 +95,17 @@ terms:
     contributor-guide: true
     usage:
       casing-rules: Always capitalize as *Azure IoT Explorer*.
-    learn-more: |
-      [Azure IoT Explorer](https://github.com/Azure/azure-iot-explorer)
+    learn-more: https://github.com/Azure/azure-iot-explorer
     services: [iot-hub, iot-develop]
   - term: Azure IoT service SDKs
     definition: |
       These SDKs, available for multiple languages, enable you to create back-end apps that interact with an IoT hub.
     usage:
-      first-mention: On first mention, always use *Azure IoT service SDKs*. On subsequent mentions abbreviate to *serive SDKs*.
+      first-mention: On first mention, always use *Azure IoT service SDKs*. On subsequent mentions abbreviate to *service SDKs*.
       casing-rules: Always refer to as *Azure IoT service SDKs*.
     customer-facing: true
     contributor-guide: true
-    learn-more: |
-      [Azure IoT service SDKs](/iot-hub/iot-hub-devguide-sdks.md#azure-iot-hub-service-sdks)
+    learn-more: /iot-hub/iot-hub-devguide-sdks.md#azure-iot-hub-service-sdks
     services: [iot-hub]
   - term: Azure IoT Tools
     definition: |
@@ -128,7 +121,7 @@ terms:
     customer-facing: true
     contributor-guide: true
     usage:
-      casing-rules: Alwyas lowercase.
+      casing-rules: Always lowercase.
     services: [iot-hub]
   - term: Built-in endpoints
     definition: |
@@ -275,8 +268,7 @@ terms:
     contributor-guide: true
     usage:
       casing-rules: Always capitalize as *Azure Certified Device*.
-    learn-more: |
-      [Overview of the Azure Certified Device program](../certification/overview.md)
+    learn-more: ../certification/overview.md
     services: [iot-hub, iot-central]
   - term: Device identity
     definition: |
@@ -303,8 +295,7 @@ terms:
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-central, iot-develop, digital-twins]
-    learn-more: |
-      [Modeling guide](../iot-develop/concepts-modeling-guide.md)
+    learn-more: ../iot-develop/concepts-modeling-guide.md
   - term: Device provisioning
     definition: |
       The process of adding the initial device data to the stores in your solution. To enable a new device to connect to your hub, you must add a device ID and keys to the IoT Hub identity registry. The Device Provisiong Service can automatically provision devices in an IoT hub or IoT Central application.
@@ -331,8 +322,7 @@ terms:
     services: [iot-hub]
     usage:
       casing-rules: Always *device REST API*.
-    learn-more: |
-      [Device REST API](/rest/api/iothub/device)
+    learn-more: /rest/api/iothub/device
   - term: Device template
     definition: |
       In IoT Central, a device template is a blueprint that defines the characteristics and behaviors of a type of device that connects to your application.
@@ -387,8 +377,7 @@ terms:
       first-mention: Spell out in full as *Digital Twins Definition Language*.
       accepted-abbreviation: DTDL
     services: [iot-hub, iot-central, digital-twins]
-    learn-more: |
-      [Digital Twins Definition Language version 2](https://github.com/Azure/opendigitaltwins-dtdl)
+    learn-more: (https://github.com/Azure/opendigitaltwins-dtdl
   - term: Direct method
     definition: |
       A way to trigger a method to execute on a device by invoking an API on your IoT hub.
@@ -538,8 +527,7 @@ terms:
       first-mention: Spell out as *Azure IoT Edge*.
       casing-rules: Always capitalize as *IoT Edge*.
     services: [iot-edge]
-    learn-more: |
-      [Azure IoT Edge](../iot-edge/index.yml)
+    learn-more: ../iot-edge/index.yml
   - term: IoT Edge agent
     definition: |
       The part of the IoT Edge runtime responsible for deploying and monitoring modules.
@@ -580,8 +568,7 @@ terms:
     usage:
       casing-rules: Always capitalize as *IoT extension for Azure CLI*.
     services: [iot-hub, iot-central, iot-edge, iot-dps, iot-develop]
-    learn-more: |
-      [Azure CLI reference commands for Azure IoT](/cli/azure/azure-cli-reference-for-IoT)
+    learn-more: /cli/azure/azure-cli-reference-for-IoT
   - term: IoT Hub
     definition: |
       A fully managed Azure service that enables reliable and secure bidirectional communications between millions of devices and a solution back end. For more information, see [What is Azure IoT Hub?](../iot-hub/about-iot-hub.md). Using your Azure subscription, you can create IoT hubs to handle your IoT messaging workloads.
@@ -592,8 +579,7 @@ terms:
       first-mention: Spell out in full as *Azure IoT Hub*. Subsequent mentions can be *IoT Hub. If the context is clear, use *hub* to refer to an instance.
       example-usage: The Azure IoT Hub service enables secure, bidirectional communication. The device sends data to your IoT hub.
       casing-rules: When referring to the service, capitalize as *IoT Hub*. When referring to an instance, capitalize as *IoT hub*.
-    learn-more: |
-      [What is Azure IoT Hub?](../iot-hub/about-iot-hub.md)
+    learn-more: ../iot-hub/about-iot-hub.md
   - term: IoT Hub metrics
     definition: |
       A feature in the Azure portal that lets you monitor the state of your IoT hubs. IoT Hub metrics enable you to assess the overall health of an IoT hub and the devices connected to it.
@@ -759,16 +745,14 @@ terms:
       accepted-abbreviation: MQTT
       first-mention: MQTT
     services: [iot-hub, iot-central, iot-develop]
-    learn-more: |
-      [Choose a device communication protocol](../iot-hub/iot-hub-devguide-protocols.md)
+    learn-more: ../iot-hub/iot-hub-devguide-protocols.md
   - term: Ontology
     definition: |
       In the context of Digital Twins, a set of models for a particular domain, such as real estate, smart cities, IoT systems, energy grids, and more. Ontologies are often used as schemas for knowledge graphs like the ones in Azure Digital Twins, because they provide a starting point based on industry standards and best practices.
     customer-facing: true
     contributor-guide: true
     services: [digital-twins]
-    learn-more: |
-      [What is an ontology?](../digital-twins/concepts-ontologies.md)
+    learn-more: ../digital-twins/concepts-ontologies.md
   - term: Operations monitoring
     definition: |
       A feature of IoT Hub that lets you to monitor the status of operations on your IoT hub in real time. IoT Hub tracks events across several categories of operations. You can opt into sending events from one or more categories to an IoT Hub endpoint for processing. You can monitor the data for errors or set up more complex processing based on data patterns.
@@ -881,8 +865,7 @@ terms:
     usage:
       accepted-abbreviation: SASL/PLAIN
     services: [iot-hub]
-    learn-more: |
-      [Simple Authentication and Security Layer](https://wikipedia.org/wiki/Simple_Authentication_and_Security_Layer)
+    learn-more: https://wikipedia.org/wiki/Simple_Authentication_and_Security_Layer
   - term: Service operations endpoint
     definition: |
       An endpoint that an administrator uses to manage service settings. For example, in the Device Provisioning Service you use the service endpoint to manage enrollments.
