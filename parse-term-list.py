@@ -11,11 +11,12 @@ class Outputter:
         self.outputFormat = outputFormat
         with open(fileName) as f:
             data = yaml.safe_load(f)
-            if outputFormat in ['customer-facing', 'contributor-guide']:
-                filteredTerms = filter(lambda term: term[outputFormat], data['terms'])
-            else: #dump-all
-                filteredTerms = data['terms']
-            self.terms = sorted(filteredTerms, key=lambda t: t['term'])
+            print('# %s' % data['title'])
+            #if outputFormat in ['customer-facing', 'contributor-guide']:
+            #    filteredTerms = filter(lambda term: term[outputFormat], data['terms'])
+            #else: #dump-all
+            #    filteredTerms = data['terms']
+            self.terms = sorted(data['terms'], key=lambda t: t['term'])
 
             # Get a list of term names in descending size order so we match the longest terms first
             # This list is used for cross-linking terms in termlist
@@ -44,6 +45,8 @@ class Outputter:
             print(definition)
             if 'learn-more' in term:
                 print('[Learn more](%s)\n' % term['learn-more'])
+            if 'see-also' in term:
+                print('See also [%s](#%s)\n' % (term['see-also'], slugify(term['see-also'])))
             print ('Applies to: %s\n' % serviceList[2:])
 
         if self.outputFormat == 'contributor-guide':
@@ -57,30 +60,20 @@ class Outputter:
             print('### %s\n' % (term['term'],) )
             print('Applies to: %s\n' % serviceList[2:])
             print(definition)
+            if 'see-also' in term:
+                print('See also [%s](#%s)\n' % (term['see-also'], slugify(term['see-also'])))
             if 'usage' in term:
                 self.outputUsage(term['usage'])
-
-            
-        if self.outputFormat == 'dump-all':
-            if 'usage' in term:
-                self.outputUsage(term['usage'])
-            if 'learn-more' in term:
-                print('[Learn more](%s)\n' % term['learn-more'])
-            serviceList = ''
-            for s in term['services']:
-                serviceList = '%s, %s' % (serviceList, services[s])
-            print ('Applies to: %s' % serviceList[2:])
-
 
     def outputUsage(self, term):
         if 'casing-rules' in term:
             print('Casing rules: %s' % (term['casing-rules']))
             print('')
-        if 'first-mention' in term:
-            print('First mention: %s' % (term['first-mention']))
+        if 'first-and-subsequent-mentions' in term:
+            print('First and subsequent mentions: %s' % (term['first-and-subsequent-mentions']))
             print('')
-        if 'accepted-abbreviation' in term:
-            print('Abbreviation: %s' % (term['accepted-abbreviation']))
+        if 'abbreviation' in term:
+            print('Abbreviation: %s' % (term['abbreviation']))
             print('')
         if 'example-usage' in term:
             print('Example usage: %s' % (term['example-usage']))
@@ -109,10 +102,10 @@ class Outputter:
         return definition
 
 inputFile = sys.argv[1]    # YAML term list file
-outputFormat = sys.argv[2] # customer-facing|contributor-guide|dump-all
+outputFormat = sys.argv[2] # customer-facing|contributor-guide
 
-print('Processing file: %s' % inputFile)
-print('Output format: %s' % outputFormat)
+print('Processing file: %s\n' % inputFile)
+print('Output format: %s\n' % outputFormat)
 
 o = Outputter(inputFile, outputFormat)
 o.generateOutput()

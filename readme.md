@@ -4,9 +4,9 @@ The intention is to generate different versions of the term list for different a
 
 The term list used in this repository is based on this published glossary: [Glossary of IoT terms](https://docs.microsoft.com/en-us/azure/iot-fundamentals/iot-glossary).
 
-Currently, the Python [script](parse-term-list.py) regenerates the published glossary from the YAML source. *Next step is to generate a version of the term list for the contributor guide.*
+Currently, the Python [script](parse-term-list.py) regenerates the published glossary and contributor guide term list from the YAML source.
 
-- Requires Python 3 and the `regex` module - use the VS Code extension for debugging: https://marketplace.visualstudio.com/items?itemName=ms-python.python
+- Requires Python 3 and the `regex` and `slugify` modules - use the VS Code extension for debugging: https://marketplace.visualstudio.com/items?itemName=ms-python.python
 - To run the script:
 
     ```
@@ -25,3 +25,11 @@ Also includes a YAML [schema](term-list.schema.json) to assist editing the YAML 
         ]
     }
     ```
+
+
+## To do and next steps
+
+- Make sure that automatic cross-linking works for acronymns as well as full terms.
+- Some kind of validation on "See also" entries - although errors are picked up when the markdown is submitted in a PR.
+- Linking needs work. We want to use relative or site relative links for "learn more" and manual links in definition, but the generated links may need to different for customer facing glossaries as compared to internal term lists.
+- Can the schema and setting be packaged in a VS Code extension?

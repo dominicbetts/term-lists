@@ -4,18 +4,14 @@ terms:
     definition: |
       One of the messaging protocols that IoT Hub and IoT Central support for communicating with devices.
     usage:
-      accepted-abbreviation: AMQP
-      first-mention: Depending on the context spell out in full. Otherwise use the abbreviation AMQP.
+      abbreviation: AMQP
+      first-and-subsequent-mentions: Depending on the context spell out in full. Otherwise use the abbreviation AMQP.
       casing-rules: Always *Advanced Message Queueing Protocol*.
     learn-more: ../iot-hub/iot-hub-devguide-protocols.md
-    customer-facing: true
-    contributor-guide: true
     services: [iot-hub, iot-central, iot-develop]
   - term: Allocation policy
     definition: |
       In the Device Provisioning Service, the allocation policy determines how the service assigns devices to a Linked IoT hub.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-dps]
@@ -24,16 +20,12 @@ terms:
       In the Device Provisioning Service, the attestation mechanism is the method used to confirm a device's identity. The attestation mechanism is configured on an enrollment.
 
       Attestation mechanisms include X.509 certificates, Trusted Platform Modules, and symmetric keys.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-dps]
   - term: Automatic deployment
     definition: |
       A feature in IoT Edge that configures a target set of IoT Edge devices to run a set of IoT Edge modules. Each deployment continuously ensures that all devices that match its target condition are running the specified set of modules, even when new devices are created or are modified to match the target condition. Each IoT Edge device only receives the highest priority deployment whose target condition it meets.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-edge]
@@ -41,8 +33,6 @@ terms:
   - term: Automatic device configuration
     definition: |
       A feature of IoT Hub that enables your solution back end to assign desired properties to a set of device twins and report device status using system and custom metrics.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub]
@@ -52,18 +42,14 @@ terms:
       A feature of IoT Hub that automates many of the repetitive and complex tasks of managing large device fleets over the entirety of their lifecycles. The feature lets you target a set of devices based on their properties, define a desired configuration, and let IoT Hub update devices whenever they come into scope.
 
       Consists of [automatic device configurations](../iot-hub/iot-hub-automatic-device-management.md) and [IoT Edge automatic deployments](../iot-edge/how-to-deploy-at-scale.md).
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub]
   - term: Azure Digital Twins
     definition: |
       A platform as a service (PaaS) offering for creating digital representations of real-world things, places, business processes, and people. Build twin graphs that represent entire environments, and use them to gain insights to drive better products, optimize operations and costs, and create breakthrough customer experiences.
-    customer-facing: true
-    contributor-guide: true
     usage:
-      first-mention: When you're referring to the service, always spell out in full as *Azure Digital Twins*.
+      first-and-subsequent-mentions: When you're referring to the service, always spell out in full as *Azure Digital Twins*.
       casing-rules: Always capitalize when you're referring to the service.
       example-usage: The data in your *Azure Digital Twins* model can be routed to downstream Azure services for more analytics or storage.
     services: [digital-twins]
@@ -72,18 +58,14 @@ terms:
     definition: |
       A single instance of the Azure Digital Twins service in a customer's subscription. While Azure Digital Twins refers to the Azure service as a whole, your Azure Digital Twins *instance* is your individual Azure Digital Twins resource.
     usage:
-      first-mention: Always spell out in full as *Azure Digital Twins instance*.
+      first-and-subsequent-mentions: Always spell out in full as *Azure Digital Twins instance*.
       casing-rules: Always capitalize the service name.
-    customer-facing: true
-    contributor-guide: true
     services: [digital-twins]
   - term: Azure IoT device SDKs
     definition: |
       These SDKS, available for multiple languages, enable you to create device apps that interact with an IoT hub or an IoT Central application.
-    customer-facing: true
-    contributor-guide: true
     usage:
-      first-mention: On first mention, always use *Azure IoT device SDKs*. On subsequent mentions abbreviate to *device SDKs*.
+      first-and-subsequent-mentions: On first mention, always use *Azure IoT device SDKs*. On subsequent mentions abbreviate to *device SDKs*.
       casing-rules: Always refer to as *Azure IoT device SDKs*.
       example-usage: The *Azure IoT device SDKs* are a set of device client libraries, developer guides, samples, and documentation. The *device SDKs* help you to programmatically connect devices to Azure IoT services.
     learn-more: ../iot-develop/about-iot-sdks.md
@@ -91,8 +73,6 @@ terms:
   - term: Azure IoT Explorer
     definition: |
       A tool you can use to view the telemetry the device is sending, work with device properties, and call commands. You can also use the explorer to interact with and test your devices, and to manage IoT Plug and Play devices.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always capitalize as *Azure IoT Explorer*.
     learn-more: https://github.com/Azure/azure-iot-explorer
@@ -101,80 +81,60 @@ terms:
     definition: |
       These SDKs, available for multiple languages, enable you to create back-end apps that interact with an IoT hub.
     usage:
-      first-mention: On first mention, always use *Azure IoT service SDKs*. On subsequent mentions abbreviate to *service SDKs*.
+      first-and-subsequent-mentions: On first mention, always use *Azure IoT service SDKs*. On subsequent mentions abbreviate to *service SDKs*.
       casing-rules: Always refer to as *Azure IoT service SDKs*.
-    customer-facing: true
-    contributor-guide: true
     learn-more: /iot-hub/iot-hub-devguide-sdks.md#azure-iot-hub-service-sdks
     services: [iot-hub]
   - term: Azure IoT Tools
     definition: |
       A cross-platform, open-source, Visual Studio Code extension that helps you manage Azure IoT Hub and devices in VS Code. With Azure IoT Tools, IoT developers can easily develop an IoT project in VS Code
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always capitalize as *Azure IoT Tools*.
     services: [iot-hub, iot-edge, iot-central, iot-develop]
   - term: Back-end app
     definition: |
       In the context of IoT Hub, an app that connects to one of the service-facing endpoints on an IoT hub. For example, a back-end app might retrieve device-to-cloud messages or manage the identity registry. Typically, a back-end app runs in the cloud, but for simplicity many of the tutorials show back-end apps as console apps running on your local development machine.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub]
   - term: Built-in endpoints
     definition: |
-      Endpoints built into IoT Hub. For example, every IoT hub includes a built-in endpoint that is Event Hub-compatible.
-    customer-facing: true
-    contributor-guide: true
+      Endpoints built into IoT Hub. For example, every IoT hub includes a built-in endpoint that is Event Hubs-compatible.
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub]
   - term: Cloud gateway
     definition: |
       A cloud-hosted app that enables connectivity for devices that cannot connect directly to IoT Hub or IoT Central. A cloud gateway is hosted in the cloud in contrast to a field gateway that runs local to your devices. A common use case for a cloud gateway is to implement protocol translation for your devices.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-central]
   - term: Cloud property
     definition: |
       A feature in IoT Central that lets your store device metadata in the IoT Central application. Cloud properties are defined in the device template, but aren't part of the device model. Cloud properties are never synchronized with a device.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-central]
   - term: Cloud-to-device
     definition: |
       Messages sent from an IoT hub to a connected device. Often, these messages are commands that instruct the device to take an action.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
-      accepted-abbreviation: Do not use *C2D*.
+      abbreviation: Do not use *C2D*.
     services: [iot-hub]
   - term: Command
     definition: |
       A command is defined in an IoT Plug and Play interface to represent a method that can be called on the digital twin. For example, a command to reboot a device. In IoT Central, commands are defined in the device template.
-    customer-facing: true
-    contributor-guide: true
     services: [iot-hub, iot-central, iot-develop]
   - term: Component
     definition: |
       In IoT Plug and Play and Azure Digital Twins, components let you build a model interface as an assembly of other interfaces. A device model can combine multiple interfaces as components. For example, a model might include a switch component and thermostat component. Multiple components in a model can also use the same interface type. For example, a model might include two thermostat components.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, digital-twins, iot-develop]
   - term: Configuration
     definition: |
       In the context of automatic device configuration in IoT Hub, it defines the desired configuration for a set of devices twins and provides a set of metrics to report status and progress.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub]
@@ -184,40 +144,30 @@ terms:
 
       - *Device connection strings* enable devices to connect to the device-facing endpoints on an IoT hub.
       - *IoT Hub connection strings* enable back-end apps to connect to the service-facing endpoints on an IoT hub.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-develop]
   - term: Custom endpoints
     definition: |
-      User defined endpoints on an IoT hub that deliver messages dispatched by a routing rule. These endpoints connect directly to an Event hub, a Service Bus queue, or a Service Bus topic.
-    customer-facing: true
-    contributor-guide: true
+      User-defined endpoints on an IoT hub that deliver messages dispatched by a routing rule. These endpoints connect directly to an event hub, a Service Bus queue, or a Service Bus topic.
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub]
   - term: Custom gateway
     definition: |
       Enables connectivity for devices that cannot connect directly to IoT Hub or IoT Central. You can use Azure IoT Edge to build custom gateways that implement custom logic to handle messages, custom protocol conversions, and other processing.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-central]
   - term: Default component
     definition: |
       All IoT Plug and Play device models have a default component. A simple device model only has a default component - such a model is also known as a no-component device. A more complex model has multiple components nested below the default component.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-central, iot-develop]
   - term: Deployment manifest
     definition: |
       A JSON document in IoT Edge that contains the configuration data for one or more IoT Edge device module twins.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-edge, iot-central]
@@ -226,46 +176,34 @@ terms:
       In the context of a device twin, desired configuration refers to the complete set of properties and metadata in the device twin that should be synchronized with the device.
     usage:
       casing-rules: Always lowercase.
-    customer-facing: true
-    contributor-guide: true
     services: [iot-hub]
   - term: Desired properties
     definition: |
       In the context of a device twin, desired properties is a subsection of the device twin that is used with reported properties to synchronize device configuration or condition. Desired properties can only be set by a back-end app and are observed by the device app. IoT Central uses the term writable properties.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub]
   - term: Device
     definition: |
       In the context of IoT, a device is typically a small-scale, standalone computing device that may collect data or control other devices. For example, a device might be an environmental monitoring device, or a controller for the watering and ventilation systems in a greenhouse. The device catalog provides a list of certified devices.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-central, iot-edge, iot-dps, iot-develop]
   - term: Device app
     definition: |
       A device app runs on your device and handles the communication with your IoT hub or IoT Central application. Typically, you use one of the Azure IoT device SDKs when you implement a device app.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-central, iot-develop]
   - term: Device builder
     definition: |
       The person responsible for creating the code to run on your devices. Device builders typically use one of the Azure IoT device SDKs to implement the device client. A device builder uses a device model and interfaces when implementing code to run on an IoT Plug and Play device.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-central, iot-edge, iot-develop]
   - term: Azure Certified Device program
     definition: |
       Azure Certified Device is a free program that enables you to differentiate, certify, and promote your IoT devices built to run on Azure.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always capitalize as *Azure Certified Device*.
     learn-more: ../certification/overview.md
@@ -273,52 +211,40 @@ terms:
   - term: Device identity
     definition: |
       A unique identifier assigned to every device registered in the IoT Hub identity registry or in an IoT Central application.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase. If you're using the abbreviation, *ID* is all upper case.
-      accepted-abbreviation: Device ID
+      abbreviation: Device ID
     services: [iot-hub, iot-central]
   - term: Device management
     definition: |
       Device management encompasses the full lifecycle associated with managing the devices in your IoT solution including planning, provisioning, configuring, monitoring, and retiring.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-central]
   - term: Device model
     definition: |
       A description, that uses the Digital Twins Definition Language, of the capabilities of a device. Capabilities include telemetry, properties, and commands.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-central, iot-develop, digital-twins]
     learn-more: ../iot-develop/concepts-modeling-guide.md
   - term: Device provisioning
     definition: |
-      The process of adding the initial device data to the stores in your solution. To enable a new device to connect to your hub, you must add a device ID and keys to the IoT Hub identity registry. The Device Provisiong Service can automatically provision devices in an IoT hub or IoT Central application.
-    customer-facing: true
-    contributor-guide: true
+      The process of adding the initial device data to the stores in your solution. To enable a new device to connect to your hub, you must add a device ID and keys to the IoT Hub identity registry. The Device Provisioning Service can automatically provision devices in an IoT hub or IoT Central application.
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-central, iot-dps]
   - term: Device Provisioning Service
     definition: |
       A helper service for IoT Hub and IoT Central that you use to configure zero-touch device provisioning. With the DPS, you can provision millions of devices in a secure and scalable manner.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always capitalized as *Device Provisioning Service*.
-      first-mention: IoT Hub Device Provisioning Service
-      accepted-abbreviation: DPS
+      first-and-subsequent-mentions: IoT Hub Device Provisioning Service
+      abbreviation: DPS
     services: [iot-hub, iot-dps, iot-central]
   - term: Device REST API
     definition: |
       A REST API you can use on a device to send device-to-cloud messages to an IoT hub, and receive cloud-to-device messages from an IoT hub. Typically, you should use one of the higher-level Azure IoT device SDKs.
-    customer-facing: true
-    contributor-guide: true
     services: [iot-hub]
     usage:
       casing-rules: Always *device REST API*.
@@ -328,69 +254,55 @@ terms:
       In IoT Central, a device template is a blueprint that defines the characteristics and behaviors of a type of device that connects to your application.
 
       For example, the device template can define the telemetry that a device sends so that IoT Central can create visualizations that use the correct units and data types. A device model is part of the device template.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
-      accepted-abbreviation: Avoid abbreviating to *template* as IoT Central also has application templates.
+      abbreviation: Avoid abbreviating to *template* as IoT Central also has application templates.
     services: [iot-central]
   - term: Device twin
     definition: |
       A device twin is JSON document that stores device state information such as metadata, configurations, and conditions. IoT Hub persists a device twin for each device that you provision in your IoT hub. Device twins enable you to synchronize device conditions and configurations between the device and the solution back end. You can query device twins to locate specific devices and for the status of long-running operations.
-    customer-facing: true
-    contributor-guide: true
+    see-also: Digital twin
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub]
   - term: Device-to-cloud
     definition: |
       Refers to messages sent from a connected device to IoT Hub or IoT Central.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
-      accepted-abbreviation: Do not use *D2C*.
+      abbreviation: Do not use *D2C*.
     services: [iot-hub]
   - term: Digital twin
     definition: |
       A digital twin is a collection of digital data that represents a physical object. Changes in the physical object are reflected in the digital twin. In some scenarios, you can use the digital twin to manipulate the physical object. The [Azure Digital Twins service](../digital-twins/index.yml) uses models expressed in the Digital Twins Definition Language to represent digital twins of physical devices or higher-level abstract business concepts, enabling a wide range of cloud-based digital twin solutions. An [IoT Plug and Play](../iot-develop/index.yml) device has a digital twin, described by a Digital Twins Definition Language device model.
-    customer-facing: true
-    contributor-guide: true
+    see-also: Device twin
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-central, digital-twins, iot-develop]
   - term: Digital twin change events
     definition: |
-      When an IoT Plug and Play device is connected to an IoT hub, the hub can use its routing capability to send notifications of digital twin changes. The IoT Central data export feature can also forward digital twin change events to other services. For example, whenever a property value changes on a device, IoT Hub can send a notification to an endpoint such as an Event hub.
-    customer-facing: true
-    contributor-guide: true
+      When an IoT Plug and Play device is connected to an IoT hub, the hub can use its routing capability to send notifications of digital twin changes. The IoT Central data export feature can also forward digital twin change events to other services. For example, whenever a property value changes on a device, IoT Hub can send a notification to an endpoint such as an event hub.
     usage:
       casing-rules: Always lowercase.
-      accepted-abbreviation: Always spell out in full to distinguish from other types of change event.
+      abbreviation: Always spell out in full to distinguish from other types of change event.
     services: [iot-hub, iot-central]
   - term: Digital Twins Definition Language
     definition: |
       A JSON-LD language for describing models and interfaces for IoT Plug and Play devices and Azure Digital Twins entities. The language enables the IoT platform and IoT solutions to use the semantics of the entity.
-    customer-facing: true
-    contributor-guide: true
     usage:
-      first-mention: Spell out in full as *Digital Twins Definition Language*.
-      accepted-abbreviation: DTDL
+      first-and-subsequent-mentions: Spell out in full as *Digital Twins Definition Language*.
+      abbreviation: DTDL
     services: [iot-hub, iot-central, digital-twins]
     learn-more: (https://github.com/Azure/opendigitaltwins-dtdl
   - term: Direct method
     definition: |
       A way to trigger a method to execute on a device by invoking an API on your IoT hub.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub]
   - term: Downstream service
     definition: |
       A relative term describing services that receive data from the current context. For example, in the context of Azure Digital Twins, Time Series Insights is a downstream service if you set up your data to flow from Azure Digital Twins into Time Series Insights.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-central, digital-twins]
@@ -399,40 +311,30 @@ terms:
       A named representation of a data routing service that can receive data from other services.
 
       An IoT hub exposes multiple endpoints that enable your apps to connect to the IoT hub. There are device-facing endpoints that enable devices to perform operations such as sending device-to-cloud messages. There are service-facing management endpoints that enable back-end apps to perform operations such as device identity management. There are service-facing built-in endpoints for reading device-to-cloud messages. You can create custom endpoints to receive device-to-cloud messages dispatched by a routing rule.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub]
   - term: Enrollment
     definition: |
       In the Device Provisioning Service, an enrollment is the record of individual devices or groups of devices that may register with a linked IoT hub through autoprovisioning.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-central, iot-dps]
   - term: Enrollment group
     definition: |
       In the Device Provisioning Service and IoT Central, an enrollment group identifies a group of devices that share an X.509 or symmetric key attestation mechanism.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-dps, iot-central]
   - term: Event handler
     definition: |
       A process that's triggered by the arrival of an event. For example, you can create event handlers by adding event processing code to an Azure function, and sending data to it using endpoints and event routing.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub]
-  - term: Event Hub-compatible endpoint
+  - term: Event Hubs-compatible endpoint
     definition: |
-      An IoT Hub endpoint that lets you use any Event Hub-compatible method to read device messages sent to the hub. Event Hub-compatible methods include the [Event Hubs SDKs](../event-hubs/event-hubs-programming-guide.md) and [Azure Stream Analytics](../stream-analytics/stream-analytics-introduction.md).
-    customer-facing: true
-    contributor-guide: true
+      An IoT Hub endpoint that lets you use any Event Hubs-compatible method to read device messages sent to the hub. Event Hubs-compatible methods include the [Event Hubs SDKs](../event-hubs/event-hubs-programming-guide.md) and [Azure Stream Analytics](../stream-analytics/stream-analytics-introduction.md).
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub]
@@ -441,24 +343,18 @@ terms:
       The process of sending events and their data from one device or service to the endpoint of another.
 
       In Iot Hub, you can define routing rules to describe how messages should be sent. In Azure Digital Twins, event routes are entities that are created for this purpose. Azure Digital Twins event routes can contain filters to limit what types of events are sent to each endpoint.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, digital-twins]
   - term: Field gateway
     definition: |
       Enables connectivity for devices that can't connect directly to IoT Hub and is typically deployed locally with your devices.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-central]
   - term: Gateway
     definition: |
       A gateway enables connectivity for devices that cannot connect directly to IoT Hub. See also field gateway, cloud gateway, and custom gateway.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-central]
@@ -467,44 +363,34 @@ terms:
       An example of a field gateway. A gateway device can be standard IoT device or an IoT Edge device.
 
       A gateway device enables connectivity for downstream devices that cannot connect directly to IoT Hub.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-central, iot-edge]
   - term: Hardware security module
     definition: |
       Used for secure, hardware-based storage of device secrets. It's the most secure form of secret storage for a device. A hardware security module can store both X.509 certificates and symmetric keys. In the Device Provisioning Service, an attestation mechanism can use a hardware security module.
-    customer-facing: true
-    contributor-guide: true
     usage:
-      first-mention: Spell out in full on first mention as *hardware security module*.
+      first-and-subsequent-mentions: Spell out in full on first mention as *hardware security module*.
       casing-rules: Always lowercase.
-      accepted-abbreviation: HSM
+      abbreviation: HSM
     services: [iot-hub, iot-develop, iot-dps]
   - term: ID scope
     definition: |
       A unique value assigned to a Device Provisioning Service instance when it's created.
 
       IoT Central applications make use of DPS instances and make the ID scope available through the IoT Central UI.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always use *ID scope*.
     services: [iot-hub, iot-central, iot-dps]
   - term: Identity registry
     definition: |
       A built-in component of an IoT hub that stores information about the individual devices permitted to connect to the hub.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub]
   - term: Individual enrollment
     definition: |
       Identifies a single device that the Device Provisioning Service can provision to an IoT hub.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-dps]
@@ -513,58 +399,44 @@ terms:
       In IoT Plug and Play, an interface describes related capabilities that are implemented by a IoT Plug and Play device or digital twin. You can reuse interfaces across different device models. When an interface is used in a device model, it defines a component of the device. A simple device only contains a default interface.
 
       In Azure Digital Twins, *interface* may be used to refer to the top-level code item in a Digital Twins Definition Language model definition.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-develop, digital-twins]
   - term: IoT Edge
     definition: |
       A service and related client libraries and runtime that enables cloud-driven deployment of Azure services and solution-specific code to on-premises devices. IoT Edge devices can aggregate data from other devices to perform computing and analytics before sending the data to the cloud.
-    customer-facing: true
-    contributor-guide: true
     usage:
-      first-mention: Spell out as *Azure IoT Edge*.
+      first-and-subsequent-mentions: Spell out as *Azure IoT Edge*.
       casing-rules: Always capitalize as *IoT Edge*.
     services: [iot-edge]
     learn-more: ../iot-edge/index.yml
   - term: IoT Edge agent
     definition: |
       The part of the IoT Edge runtime responsible for deploying and monitoring modules.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always capitalize as *IoT Edge agent*.
     services: [iot-edge]
   - term: IoT Edge device
     definition: |
       A device that uses containerized IoT Edge modules to run Azure services, third-party services, or your own code. On the device, the IoT Edge runtime manages the modules. You can remotely monitor and manage an IoT Edge device from the cloud.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always capitalize as *IoT Edge device*.
     services: [iot-edge]
   - term: IoT Edge hub
     definition: |
       The part of the IoT Edge runtime responsible for module to module, upstream, and downstream communications.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always capitalize as *IoT Edge hub*.
     services: [iot-edge]
   - term: IoT Edge runtime
     definition: |
       Includes everything that Microsoft distributes to be installed on an IoT Edge device. It includes Edge agent, Edge hub, and the IoT Edge security daemon.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always capitalize as *IoT Edge runtime*.
     services: [iot-edge]
   - term: IoT extension for Azure CLI
     definition: |
       An extension for the Azure CLI. The extension lets you complete tasks such as managing your devices in the identity registry, sending and receiving device messages, and monitoring your IoT hub operations.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always capitalize as *IoT extension for Azure CLI*.
     services: [iot-hub, iot-central, iot-edge, iot-dps, iot-develop]
@@ -572,61 +444,47 @@ terms:
   - term: IoT Hub
     definition: |
       A fully managed Azure service that enables reliable and secure bidirectional communications between millions of devices and a solution back end. For more information, see [What is Azure IoT Hub?](../iot-hub/about-iot-hub.md). Using your Azure subscription, you can create IoT hubs to handle your IoT messaging workloads.
-    customer-facing: true
-    contributor-guide: true
     services: [iot-hub]
     usage:
-      first-mention: Spell out in full as *Azure IoT Hub*. Subsequent mentions can be *IoT Hub. If the context is clear, use *hub* to refer to an instance.
+      first-and-subsequent-mentions: Spell out in full as *Azure IoT Hub*. Subsequent mentions can be *IoT Hub*. If the context is clear, use *hub* to refer to an instance.
       example-usage: The Azure IoT Hub service enables secure, bidirectional communication. The device sends data to your IoT hub.
       casing-rules: When referring to the service, capitalize as *IoT Hub*. When referring to an instance, capitalize as *IoT hub*.
     learn-more: ../iot-hub/about-iot-hub.md
   - term: IoT Hub metrics
     definition: |
       A feature in the Azure portal that lets you monitor the state of your IoT hubs. IoT Hub metrics enable you to assess the overall health of an IoT hub and the devices connected to it.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always capitalize as *IoT Hub metrics*.
     services: [iot-hub]
   - term: IoT Hub query language
     definition: |
       A SQL-like language for IoT Hub that lets you query your jobs, digital twins, and device twins.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always capitalize as *IoT Hub query language*.
-      first-mention: Spell out in full as *IoT Hub query language*, if the context is clear subsequent mentions can be *query language*.
+      first-and-subsequent-mentions: Spell out in full as *IoT Hub query language*, if the context is clear subsequent mentions can be *query language*.
     services: [iot-hub]
   - term: IoT Hub Resource REST API
     definition: |
       An API you can use to manage the IoT hubs in your Azure subscription with operations such as creating, updating, and deleting hubs.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always capitalize as *IoT Hub Resource REST API*.
     services: [iot-hub]
   - term: IoT Plug and Play bridge
     definition: |
-      An an open-source application that enables existing sensors and peripherals attached to Windows or Linux gateways to connect as IoT Plug and Play devices.
-    customer-facing: true
-    contributor-guide: true
+      An open-source application that enables existing sensors and peripherals attached to Windows or Linux gateways to connect as IoT Plug and Play devices.
     usage:
-      first-mention: Spell out in full as *IoT Plug and Play bridge*. If the context is clear, subsequent mentions can be *bridge*.
+      first-and-subsequent-mentions: Spell out in full as *IoT Plug and Play bridge*. If the context is clear, subsequent mentions can be *bridge*.
       casing-rules: Always capitalize as *IoT Plug and Play bridge*.
     services: [iot-hub, iot-develop, iot-central]
   - term: IoT Plug and Play conventions
     definition: |
       A set of conventions that IoT devices should follow when they exchange data with a solution.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always capitalize as *IoT Plug and Play conventions*.
     services: [iot-hub, iot-central, iot-develop]
   - term: IoT Plug and Play device
     definition: |
       Typically a small-scale, standalone computing device that collects data or controls other devices, and that runs software or firmware that implements a device model. For example, an IoT Plug and Play device might be an environmental monitoring device, or a controller for a smart-agriculture irrigation system. An IoT Plug and Play device might be implemented directly or as an IoT Edge module.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always capitalize as *IoT Plug and Play device*.
     services: [iot-hub, iot-central, iot-develop]
@@ -635,32 +493,24 @@ terms:
       In the context of IoT Hub, jobs let you schedule and track activities on a set of devices registered with your IoT hub. Activities include updating device twin desired properties, updating device twin tags, and invoking direct methods. IoT Hub also uses jobs to import to and export from the identity registry.
 
       In the context of IoT Central, jobs let you manage your connected devices in bulk by setting properties and calling commands. IoT Central jobs also let you update cloud properties in bulk.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-central]
   - term: Leaf device
     definition: |
       A device with no downstream devices connected. Typically leaf devices are connected to a gateway device.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-edge, iot-central, iot-develop]
   - term: Lifecycle event
     definition: |
       In Azure Digital Twins, this type of event is fired when a data item—such as a digital twin, a relationship, or an event handler is created or deleted from your Azure Digital Twins instance.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [digital-twins, iot-hub, iot-central]
   - term: Linked IoT hub
     definition: |
-      An IoT hub that is linked to a Device Provisioning Service instance. A DPS instance can register a device IDs and set the initial configuration in the device twins in linked IoT hubs.
-    customer-facing: true
-    contributor-guide: true
+      An IoT hub that is linked to a Device Provisioning Service instance. A DPS instance can register a device ID and set the initial configuration in the device twins in linked IoT hubs.
     usage:
       casing-rules: Always capitalize as *linked IoT hub*.
     services: [iot-hub, iot-dps]
@@ -669,32 +519,24 @@ terms:
       A definition of a type of entity in your physical environment, including its properties, telemetries, and components. Models are used to create digital twins that represent specific physical objects of this type. Models are written in the Digital Twins Definition Language.
 
       In the Azure Digital Twins service, models define devices or higher-level abstract business concepts. In IoT Plug and Play, device models describe devices specifically.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-central, digital-twins, iot-develop]
   - term: Model ID
     definition: |
       When an IoT Plug and Play device connects to an IoT Hub or IoT Central application, it sends the model ID of the Digital Twins Definition Language model it implements. Every model as a unique model ID. This model ID enables the solution to find the device model.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always capitalize as *model ID*.
     services: [iot-hub, iot-central, iot-develop, digital-twins]
   - term: Model repository
     definition: |
       Stores Digital Twins Definition Language models and interfaces. A solution uses a model ID to retrieve a model from a repository.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-central, digital-twins]
   - term: Model repository REST API
     definition: |
       An API for managing and interacting with a model repository. For example, you can use the API to add and search for device models.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always capitalize as *model repository REST API*.
     services: [iot-hub, iot-central, digital-twins]
@@ -702,208 +544,158 @@ terms:
     definition: |
       A unique identifier assigned to every module that belongs to a device. Module identities are also registered in the identity registry.
 
-      The module identify details the security credentials the module uses to authenticate with the IoT Hub or, in the case of an IoT Edge module to the IoT Edge hub.
-    customer-facing: true
-    contributor-guide: true
+      The module identity details the security credentials the module uses to authenticate with the IoT Hub or, in the case of an IoT Edge module to the IoT Edge hub.
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-edge, iot-develop]
   - term: Module image
     definition: |
       The docker image the IoT Edge runtime uses to instantiate module instances.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-edge]
   - term: Module twin
     definition: |
       Similar to device twin, a module twin is JSON document that stores module state information such as metadata, configurations, and conditions. IoT Hub persists a module twin for each module identity that you provision under a device identity in your IoT hub. Module twins enable you to synchronize module conditions and configurations between the module and the solution back end. You can query module twins to locate specific modules and query the status of long-running operations.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub]
   - term: Module
     definition: |
-      The IoT Hub device SDKs let you to instantiate modules where each one opens an independent connection to your IoT hub. This lets you to use separate namespaces for different components on your device.
+      The IoT Hub device SDKs let you instantiate modules where each one opens an independent connection to your IoT hub. This lets you use separate namespaces for different components on your device.
 
       Module identity and module twin provide the same capabilities as device identity and device twin but at a finer granularity.
 
       In IoT Edge, a module is a Docker container that you can deploy to IoT Edge devices. It performs a specific task, such as ingesting a message from a device, transforming a message, or sending a message to an IoT hub. It communicates with other modules and sends data to the IoT Edge runtime.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-edge, iot-develop]
   - term: MQTT
     definition: |
       One of the messaging protocols that IoT Hub and IoT Central support for communicating with devices. MQTT doesn't stand for anything.
-    customer-facing: true
-    contributor-guide: true
     usage:
-      accepted-abbreviation: MQTT
-      first-mention: MQTT
+      abbreviation: MQTT
+      first-and-subsequent-mentions: MQTT
     services: [iot-hub, iot-central, iot-develop]
     learn-more: ../iot-hub/iot-hub-devguide-protocols.md
   - term: Ontology
     definition: |
       In the context of Digital Twins, a set of models for a particular domain, such as real estate, smart cities, IoT systems, energy grids, and more. Ontologies are often used as schemas for knowledge graphs like the ones in Azure Digital Twins, because they provide a starting point based on industry standards and best practices.
-    customer-facing: true
-    contributor-guide: true
     services: [digital-twins]
     learn-more: ../digital-twins/concepts-ontologies.md
   - term: Operations monitoring
     definition: |
-      A feature of IoT Hub that lets you to monitor the status of operations on your IoT hub in real time. IoT Hub tracks events across several categories of operations. You can opt into sending events from one or more categories to an IoT Hub endpoint for processing. You can monitor the data for errors or set up more complex processing based on data patterns.
-    customer-facing: true
-    contributor-guide: true
+      A feature of IoT Hub that lets you monitor the status of operations on your IoT hub in real time. IoT Hub tracks events across several categories of operations. You can opt into sending events from one or more categories to an IoT Hub endpoint for processing. You can monitor the data for errors or set up more complex processing based on data patterns.
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub]
   - term: Physical device
     definition: |
       A real IoT device that connects to an IoT hub. For convenience, many tutorials and quickstarts run IoT device code on a desktop machine rather than a physical device.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-central, iot-develop, iot-edge]
   - term: Primary and secondary keys
     definition: |
       When you connect to a device-facing or service-facing endpoint on an IoT hub or IoT Central application, your connection string includes key to grant you access. When you add a device to the identity registry or add a shared access policy to your hub, the service generates a primary and secondary key. Having two keys enables you to roll over from one key to another when you update a key without losing access to the IoT hub or IoT Central application.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-central]
   - term: Properties
     definition: |
       In the context of a digital twin, data fields defined in an interface that represent some persistent state of the digital twin. You can declare properties as read-only or writable. Read-only properties, such as serial number, are set by code running on the IoT Plug and Play device itself. Writable properties, such as an alarm threshold, are typically set from the cloud-based IoT solution.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-central, digital-twins, iot-develop]
   - term: Property change event
     definition: |
       An event that results from a property change in a digital twin.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-central, digital-twins]
   - term: Protocol gateway
     definition: |
       A gateway typically deployed in the cloud to provide protocol translation services for devices connecting to an IoT hub or IoT Central application.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-central]
   - term: Registration
     definition: |
       A record of a device in the IoT Hub identity registry. You can register or device directly, or use the Device Provisioning Service to automate device registration.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-central, iot-dps]
   - term: Registration ID
     definition: |
       A unique device identity in the Device Provisioning Service. The registration ID may be the same value as the device identity.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-central, iot-dps]
   - term: Relationship
     definition: |
       Used in the Azure Digital Twins service to connect digital twins into knowledge graphs that digitally represent your entire physical environment. The types of relationships that your twins can have are defined in the Digital Twins Definition Language model.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [digital-twins]
   - term: Reported configuration
     definition: |
       In the context of a device twin, this refers to the complete set of properties and metadata in the device twin that are reported to the solution back end.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-develop]
   - term: Reported properties
     definition: |
       In the context of a device twin, reported properties is a subsection of the device twin. Reported properties can only be set by the device but can be read and queried by a back-end app.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-develop]
   - term: Retry policy
     definition: |
       A way to handle transient errors when you connect to a cloud service.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-central, iot-develop]
   - term: Routing rule
     definition: |
       A feature of IoT Hub used to route device-to-cloud messages to a built-in endpoint or to custom endpoints for processing by your solution back end.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub]
   - term: SASL/PLAIN
     definition: |
       A protocol that Advanced Message Queueing Protocol uses to transfer security tokens.
-    customer-facing: true
-    contributor-guide: true
     usage:
-      accepted-abbreviation: SASL/PLAIN
+      abbreviation: SASL/PLAIN
     services: [iot-hub]
     learn-more: https://wikipedia.org/wiki/Simple_Authentication_and_Security_Layer
   - term: Service operations endpoint
     definition: |
       An endpoint that an administrator uses to manage service settings. For example, in the Device Provisioning Service you use the service endpoint to manage enrollments.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-dps, iot-edge, digital-twins]
   - term: Service REST API
     definition: |
       A REST API you can use from the solution back end to manage your devices. For example, you can use the Iot Hub service API to retrieve and update device twin properties, invoke direct methods, and schedule jobs. Typically, you should use one of the higher-level service SDKs.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always *service REST API*.
     services: [iot-hub, iot-central, iot-dps, iot-edge]
   - term: Shared access policy
     definition: |
       A way to define the permissions granted to anyone who has a valid primary or secondary key associated with that policy. You can manage the shared access policies and keys for your hub in the portal.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-edge, iot-dps]
   - term: Shared access signature
     definition: |
       A shared access signature is a signed URI that points to one or more resources such as an IoT hub endpoint. The URI includes a token that indicates how the resources can be accessed by the client. One of the query parameters, the signature, is constructed from the SAS parameters and signed with the key that was used to create the SAS. This signature is used by Azure Storage to authorize access to the storage resource.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
-      accepted-abbreviation: SAS
+      abbreviation: SAS
     services: [iot-hub, digital-twins, iot-central, iot-edge]
   - term: Simulated device
     definition: |
       For convenience, many of the tutorials and quickstarts run device code with simulated sensors on your local development machine. In contrast, a physical device such as an MXCHIP has real sensors and connects to an IoT hub.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services:
@@ -911,32 +703,24 @@ terms:
   - term: Solution
     definition: |
       In the context of IoT, *solution* typically refers to an IoT solution that includes elements such as devices, device apps, an IoT hub, other Azure services, and back-end apps.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-central, iot-dps, iot-edge, digital-twins]
   - term: System properties
     definition: |
       In the context of a device twin, the read-only properties that include information regarding the device usage such as last activity time and connection state.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub]
   - term: Tag
     definition: |
       In the context of a device twin, tags are device metadata stored and retrieved by the solution back end in the form of a JSON document. Tags are not visible to apps on a device.
-    customer-facing: true
-    contributor-guide: true
     services: [iot-hub]
     usage:
       casing-rules: Always lowercase.
   - term: Target condition
     definition: |
       In an IoT Edge deployment, the target condition selects the target devices of the deployment. The target condition is continuously evaluated to include any new devices that meet the requirements or remove devices that no longer do.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-edge]
@@ -947,8 +731,6 @@ terms:
       Unlike properties, telemetry is not stored on a digital twin; it is a stream of time-bound data events that need to be handled as they occur.
 
       In IoT Plug and Play and Azure Digital Twins, telemetry fields defined in an interface represent measurements. These measurements are typically values such as sensor readings that are sent by devices, like IoT Plug and Play devices, as a stream of data.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
       example-usage: |
@@ -957,41 +739,31 @@ terms:
   - term: Telemetry event
     definition: |
       An event in an IoT hub that indicates the arrival of telemetry data.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub]
   - term: Digital twin graph
     definition: |
       In the Azure Digital Twins service, you can connect digital twins with relationships to create knowledge graphs that digitally represent your entire physical environment. A single Azure Digital Twins instance can host many disconnected graphs, or one single interconnected graph.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
-      first-mention: Use *digital twin graph* on first mention, then use *twin graph*.
+      first-and-subsequent-mentions: Use *digital twin graph* on first mention, then use *twin graph*.
     services: [iot-hub]
   - term: Twin queries
     definition: |
       A feature of IoT Hub that lets you use a SQL-like query language to retrieve information from your device twins or module twins.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub]
   - term: Twin synchronization
     definition: |
       The process in IoT Hub that uses the desired properties in your device twins or module twins to configure your devices or modules and retrieve reported properties from them to store in the twin.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub]
   - term: Upstream service
     definition: |
       A relative term describing services that feed data into the current context. For instance, in the context of Azure Digital Twins, IoT Hub is considered an upstream service because data flows from IoT Hub into Azure Digital Twins.
-    customer-facing: true
-    contributor-guide: true
     usage:
       casing-rules: Always lowercase.
     services: [iot-hub, iot-central, digital-twins]
