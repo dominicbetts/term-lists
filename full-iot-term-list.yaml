@@ -83,7 +83,7 @@ terms:
     usage:
       first-and-subsequent-mentions: On first mention, always use *Azure IoT service SDKs*. On subsequent mentions abbreviate to *service SDKs*.
       casing-rules: Always refer to as *Azure IoT service SDKs*.
-    learn-more: /iot-hub/iot-hub-devguide-sdks.md#azure-iot-hub-service-sdks
+    learn-more: ../iot-hub/iot-hub-devguide-sdks.md#azure-iot-hub-service-sdks
     services: [iot-hub]
   - term: Azure IoT Tools
     definition: |
@@ -293,7 +293,7 @@ terms:
       first-and-subsequent-mentions: Spell out in full as *Digital Twins Definition Language*.
       abbreviation: DTDL
     services: [iot-hub, iot-central, digital-twins]
-    learn-more: (https://github.com/Azure/opendigitaltwins-dtdl
+    learn-more: https://github.com/Azure/opendigitaltwins-dtdl
   - term: Direct method
     definition: |
       A way to trigger a method to execute on a device by invoking an API on your IoT hub.

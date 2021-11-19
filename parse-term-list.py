@@ -47,6 +47,8 @@ class Outputter:
                 print('[Learn more](%s)\n' % term['learn-more'])
             if 'see-also' in term:
                 print('See also [%s](#%s)\n' % (term['see-also'], slugify(term['see-also'])))
+            if 'usage' in term:
+                self.outputUsage(term['usage'])
             print ('Applies to: %s\n' % serviceList[2:])
 
         if self.outputFormat == 'contributor-guide':
